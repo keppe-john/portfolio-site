@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+  <meta charset="UTF-8">
+  <title>Projects – Pixel-Perfect Web Development by John Keppe</title>
+  <meta name="description" content="Browse standout web projects that combine retro style and responsive design.">
+  <meta name="keywords" content="John Keppe, web projects, front-end developer, vaporwave CSS, HTML skills">
+  <meta name="author" content="John Keppe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Favicon & Manifest -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+  <body>
+  <header>
+  <nav class="mobile-nav">
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <ul id="nav-links" class="neon-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+    <section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>Portfolio Website</strong> – Designed to showcase my evolving skills and experience. Structure and styling created in collaboration with Microsoft Copilot; I served as the creative guide, decision-maker, and storyteller.
+    </li>
+  </ul>
+</section>
+<main class="projects">
+  <section class="project-card">
+    <h2>NeonNav</h2>
+    <p>A glowing navigation bar built entirely in CSS. Designed to mimic retro UI buttons and animated on hover.</p>
+    <ul>
+      <li>✨ Tech: HTML & CSS</li>
+      <li>🔧 Challenge: Creating glow without JavaScript</li>
+      <li>🚀 Link: <a href="https://jnkeppe.neocities.org/neonnav.html">Live Demo</a></li>
+    </ul>
+  </section>
+
+  <section class="project-card">
+    <h2>PixelPulse</h2>
+    <p>Mini portfolio landing page using pixel art, grid layout, and vaporwave color scheme. Responsive and scroll-triggered animations.</p>
+    <ul>
+      <li>🎨 Tech: CSS Grid, Flexbox</li>
+      <li>🌈 Learned: Smooth scaling & mobile design</li>
+      <li>🔗 Link: <a href="https://jnkeppe.neocities.org/pixelpulse.html">Live Demo</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+    <p>© 2025 John Keppe</p>
+    <p style="font-size: 0.9em; text-align: center; margin-top: 2em;">
+  Built with ❤️ and code assistance from <strong>Microsoft Copilot</strong>
+</p>
+
+  </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.getElementById("nav-links");
+    nav.classList.toggle("open");
+  }
+</script>
+  </body>
+</html>

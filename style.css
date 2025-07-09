@@ -1,0 +1,492 @@
+/* === GLOBAL STYLES === */
+body {
+  background-color: #003366;
+  color: #F2F2F2;
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  padding: 0;
+}
+
+/* === HEADERS === */
+h1, h2, h3 {
+  color: #FFA500;
+  text-shadow: 0 0 6px #FF6F00;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.8em;
+  color: #FFA500;
+  text-shadow: 0 0 10px #FF6F00, 0 0 20px #ccf;
+  margin-bottom: 0.3em;
+}
+
+
+/* === LINKS === */
+a {
+  color: #FFC166;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF6F00;
+  text-shadow: 0 0 5px #FFA500;
+}
+
+/* === BUTTONS === */
+button {
+  background: linear-gradient(to right, #FFA500, #FF6F00);
+  color: #003366;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  box-shadow: 0 0 10px #FF6F00;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === TIMELINE (VERTICAL STYLE) === */
+#timeline {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+}
+
+.vertical-timeline {
+  position: relative;
+  border-left: 4px solid #FFA500;
+  padding-left: 20px;
+}
+
+.event {
+  position: relative;
+  margin-bottom: 2em;
+  padding-left: 10px;
+}
+
+.event::before {
+  content: "✦";
+  position: absolute;
+  left: -24px;
+  top: 0;
+  color: #FFA500;
+  font-size: 1.4em;
+  text-shadow: 0 0 5px #FF6F00;
+}
+
+.date {
+  font-weight: bold;
+  color: #FFA500;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* === SKILLS & TOOLS GRID === */
+#skills {
+  max-width: 800px;
+  margin: auto;
+  padding: 2em;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.skill-category {
+  flex: 1 1 300px;
+  background: #002244;
+  border: 2px solid #FFA500;
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 0 10px #FF6F00;
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  color: #FFA500;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category ul li::before {
+  content: "✦ ";
+  color: #FFA500;
+}
+
+/* === SKILL LEVEL BAR CHART === */
+#vaporwave-skills {
+  max-width: 700px;
+  margin: auto;
+  padding: 2em;
+  font-family: 'Courier New', monospace;
+  color: #FFA500;
+}
+
+.skill-bar {
+  margin-bottom: 1.5em;
+}
+
+.skill-bar span {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.bar {
+  background: #002244;
+  border: 2px solid #FFA500;
+  border-radius: 30px;
+  height: 24px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 8px #FF6F00;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #FFA500, #FF6F00);
+  box-shadow: 0 0 10px #FF6F00;
+  animation: grow 2s ease-out forwards;
+}
+
+/* Skill Level Widths */
+.htmlcss { width: 90%; }
+.design  { width: 80%; }
+.email   { width: 70%; }
+.service { width: 95%; }
+
+@keyframes grow {
+  from { width: 0; }
+  to { width: var(--width); }
+}
+
+/* === CONTACT SECTION === */
+#contact {
+  background: linear-gradient(135deg, #003366, #005599);
+  padding: 2em;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px #FFA500;
+  font-family: 'Courier New', monospace;
+  color: #F2F2F2;
+}
+
+#contact a {
+  color: #FFC166;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* === HEADER NAME STYLE === */
+header h1 {
+  font-family: 'Courier New', monospace;
+  font-size: 2.8em;
+  color: #FFA500;
+  text-shadow: 0 0 10px #FF6F00, 0 0 20px #ccf;
+  margin-bottom: 0.3em;
+}
+
+/* === NAVIGATION LINK STYLE === */
+header nav ul li a {
+  font-family: 'Courier New', monospace;
+  color: #ccf;
+  text-decoration: none;
+  padding: 0.5em;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background: #ffccf9;
+  color: #333;
+  border-color: #FF6F00;
+  box-shadow: 0 0 10px #FFA500;
+}
+
+.logo {
+  display: block;
+  max-width: 150px; /* Adjust this number if needed */
+  height: auto;
+  margin: 0 auto; /* Center horizontally */
+  padding-bottom: 1em;
+}
+
+#hero {
+  background: linear-gradient(135deg, #003366, #005599);
+  padding: 4em 1em;
+  text-align: center;
+  box-shadow: inset 0 0 100px #001133;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1em;
+  filter: drop-shadow(0 0 10px #FF6F00);
+}
+
+#hero h1 {
+  font-size: 3em;
+  color: #FFA500;
+  text-shadow: 0 0 10px #FF6F00, 0 0 20px #ccf;
+  margin-bottom: 0.5em;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: #FFC166;
+  font-style: italic;
+  text-shadow: 0 0 5px #FF6F00;
+}
+
+.pixel-icon {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pixel-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #FFA500;
+}
+
+.about {
+  padding: 2em;
+  font-family: 'Courier New', monospace;
+  color: #ccf;
+  background: linear-gradient(145deg, #120c28, #24193f);
+}
+
+.bio h2, .bio h3 {
+  color: #FFA500;
+  text-shadow: 0 0 5px #FF6F00;
+}
+
+ul li {
+  margin-bottom: 0.5em;
+}
+
+.bio {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  padding: 2em;
+}
+
+.project-card {
+  background: #1b1b2f;
+  padding: 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #FF6F00;
+  color: #f9f9f9;
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1);
+  box-shadow: 0 0 20px #FFA500;
+}
+
+nav ul li a {
+  font-family: 'Courier New', monospace;
+  color: #ccf;
+  padding: 0.5em 1em;
+  border: 2px solid #FFA500;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #FF6F00;
+  color: #fff;
+  box-shadow: 0 0 10px #FFA500;
+}
+
+.pixelpulse {
+  background: linear-gradient(135deg, #120c28, #24193f);
+  color: #ccf;
+  padding: 2em;
+  font-family: 'Courier New', monospace;
+}
+
+.pixelpulse h2 {
+  color: #FFA500;
+  text-shadow: 0 0 5px #FF6F00;
+}
+
+.pixelpulse a {
+  color: #FFA500;
+  text-decoration: underline;
+}
+
+.neon-nav {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on small screens */
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: #120c28;
+  margin: 0;
+}
+
+.neon-nav li a {
+  font-family: 'Courier New', monospace;
+  color: #ccf;
+  padding: 0.5em 1em;
+  border: 2px solid #FFA500;
+  border-radius: 8px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevents text from breaking awkwardly */
+}
+
+.neon-nav li a:hover {
+  background-color: #FF6F00;
+  color: #fff;
+  box-shadow: 0 0 10px #FFA500;
+}
+
+
+.pixelpulse {
+  background: linear-gradient(135deg, #120c28, #24193f);
+  color: #ccf;
+  padding: 2em;
+  font-family: 'Courier New', monospace;
+}
+
+.pixelpulse h2 {
+  color: #FFA500;
+  text-shadow: 0 0 5px #FF6F00;
+}
+
+.pixelpulse a {
+  color: #FFA500;
+  text-decoration: underline;
+}
+
+/* Hide nav links by default on small screens */
+#nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: #120c28;
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: #FFA500;
+  margin: 1em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .hamburger {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-links.open {
+    display: flex;
+  }
+
+  #nav-links li a {
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.5em 0;
+  }
+}
+
+.hamburger:hover {
+  text-shadow: 0 0 10px #FFA500;
+}
+
+.contact-form {
+  background: #1b1b2f;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #FF6F00;
+  color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Courier New', monospace;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1em;
+  color: #FFA500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8em;
+  margin-top: 0.5em;
+  border: 2px solid #FFA500;
+  border-radius: 8px;
+  background-color: #120c28;
+  color: #fff;
+}
+
+.contact-form button {
+  margin-top: 1.5em;
+  background-color: #FF6F00;
+  color: #fff;
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FFA500;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #FFA500;
+}

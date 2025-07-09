@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jnkeppe.neocities.org/sitemap.xml
