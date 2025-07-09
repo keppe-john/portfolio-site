@@ -447,46 +447,60 @@ nav ul li a:hover {
   text-shadow: 0 0 10px #FFA500;
 }
 
-.contact-form {
-  background: #1b1b2f;
+/* Vaporwave Contact Form */
+#contactForm {
+  background-color: #1f1d2b;
   padding: 2em;
   border-radius: 12px;
-  box-shadow: 0 0 15px #FF6F00;
-  color: #f9f9f9;
+  box-shadow: 0 0 20px #ff2ec4;
   max-width: 600px;
-  margin: 0 auto;
-  font-family: 'Courier New', monospace;
+  margin: 3em auto;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  border: 2px solid #ff2ec4;
 }
 
-.contact-form label {
+#contactForm input,
+#contactForm textarea {
   display: block;
-  margin-top: 1em;
-  color: #FFA500;
-}
-
-.contact-form input,
-.contact-form textarea {
   width: 100%;
-  padding: 0.8em;
-  margin-top: 0.5em;
-  border: 2px solid #FFA500;
+  margin-top: 1em;
+  padding: 0.75em;
+  background-color: #2d2b3a;
+  color: #f0f0f0;
+  border: 2px solid #00f7ff;
   border-radius: 8px;
-  background-color: #120c28;
-  color: #fff;
+  font-size: 1em;
 }
 
-.contact-form button {
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+  color: #bbb;
+}
+
+#contactForm button {
   margin-top: 1.5em;
-  background-color: #FF6F00;
-  color: #fff;
-  padding: 0.8em 1.5em;
+  background-color: #ff2ec4;
+  color: white;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  box-shadow: 0 0 10px #FFA500;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #ff2ec4;
+  transition: all 0.3s ease;
 }
 
-.contact-form button:hover {
-  background-color: #FFA500;
+#contactForm button:hover {
+  background-color: #ff72d0;
+  box-shadow: 0 0 15px #ff2ec4;
+}
+
+#formStatus {
+  text-align: center;
+  margin-top: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  color: #00f7ff;
 }
