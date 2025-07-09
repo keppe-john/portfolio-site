@@ -1,4 +1,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jnkeppe.neocities.org/sitemap.xml
+Sitemap: https://keppe-john.github.io/portfolio-site/sitemap.xml
+
