@@ -2,44 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  
+</head>
+  
   <title>EmailJS Test Form</title>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    (function() {
-      emailjs.init("k9uhdurPufPFtgIof"); // Replace with your actual public key
-    })();
-  </script>
-</head>
+<script>
+  (function() {
+    emailjs.init("k9uhdurPufPFtgIof"); // Replace with your actual public key
+  })();
+</script>
+
 <body>
   <h2>Send a Message</h2>
   <form id="contactForm">
-    <label>Name:</label>
-    <input type="text" name="name" required><br><br>
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="you@example.com" required>
+  <textarea name="message" placeholder="Your message" required></textarea>
+  <button type="submit">Send</button>
+</form>
 
-    <label>Email:</label>
-    <input type="email" name="email" required><br><br>
+<div id="formStatus"></div>
 
-    <label>Message:</label>
-    <textarea name="message" required></textarea><br><br>
-
-    <button type="submit">Send</button>
-  </form>
 
   <div id="formStatus"></div>
 
   <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
 
-      emailjs.sendForm("service_0w6a9ws", "template_j57c05c", this)
-        .then(() => {
-          document.getElementById("formStatus").innerHTML = "✅ Message sent!";
-          this.reset();
-        }, (error) => {
-          document.getElementById("formStatus").innerHTML = "❌ Failed to send.";
-          console.error("EmailJS error:", error);
-        });
+  emailjs.sendForm("service_0w6a9ws", "template_j57co5c", this)
+    .then(() => {
+      document.getElementById("formStatus").innerHTML = "✅ Message sent!";
+      this.reset();
+    }, (error) => {
+      document.getElementById("formStatus").innerHTML = "❌ Failed to send.";
+      console.error("EmailJS error:", error);
     });
-  </script>
+});
+</script>
+
 </body>
 </html>
