@@ -10,15 +10,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   
-  <!-- Favicon & Manifest -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <!-- Favicon-->
   <link rel="icon" href="favicon.png">
+
+   <!--CSS External Stylesheet Link-->   
   <link rel="stylesheet" href="style.css">
+      
 </head>
   <body>
+
+    <!--Navigation-->
   <header>
   <nav class="mobile-nav">
     <button class="hamburger" onclick="toggleMenu()">☰</button>
@@ -33,13 +34,13 @@
   </nav>
 </header>
 
-
-
-    <section id="about">
+    <!--About Me Section-->
+ <section id="about">
    <h2>About Me</h2>
     <p>Welcome! With over 30 years of experience across retail, administration, and customer-centered roles, I'm now channeling my energy into the world of technology. I’m passionate about learning new tools, sharpening my digital skills, and exploring opportunities where service, creativity, and tech intersect. This portfolio reflects both where I’ve been and where I’m headed—and I’m excited about what’s next.</p>
   </section>
-  
+
+    <!--Bio Section-->
   <main class="about">
   <section class="bio">
     <h2>My Journey Into Tech</h2>
@@ -56,19 +57,21 @@
   </section>
 </main>
 
-
+    <!--Footer-->
   <footer>
     <p>© 2025 John Keppe</p>
     <p style="font-size: 0.9em; text-align: center; margin-top: 2em;">
   Built with ❤️ and code assistance from <strong>Microsoft Copilot</strong>
 </p>
-
   </footer>
+
+    <!--Nav Links CSS-->
   <script>
   function toggleMenu() {
     const nav = document.getElementById("nav-links");
     nav.classList.toggle("open");
   }
 </script>
+    
   </body>
 </html>
